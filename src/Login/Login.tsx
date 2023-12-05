@@ -5,9 +5,6 @@ import { useDisclosure } from '@mantine/hooks';
 export function Login({ onLogin }: { onLogin: () => void }){
 
     const handleLogin = () => {
-        // Hier kannst du ggf. Authentifizierungslogik hinzufügen
-
-        // Rufe die onLogin-Funktion auf, um den loggedIn-Zustand in der übergeordneten Komponente zu aktualisieren
         onLogin();
     };
     const [visible, { toggle }] = useDisclosure(false);

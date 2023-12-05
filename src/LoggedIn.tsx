@@ -4,10 +4,10 @@ import {MainPage} from "./Page/MainPage";
 
 export function LoggedIn(){
     const [pinComplete, setPinComplete] = useState(false);
-    const hello = () => {setPinComplete(true)}
+    const onComplete = () => {setPinComplete(true)}
 
     return(
-        <div> {pinComplete ? (<MainPage/>) : (<PinInput type={/^[0-9]*$/} inputType="tel" inputMode="numeric" onComplete={hello} />)}
+        <div> {pinComplete ? (<MainPage/>) : (<PinInput type={/^[0-9]*$/} inputType="tel" inputMode="numeric" onComplete={onComplete} />)}
 
         </div>
     )
