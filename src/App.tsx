@@ -12,7 +12,6 @@ function App() {
     <div className="App">
         <MantineProvider>
             {loggedIn ? <LoggedIn></LoggedIn> : <Login onLogin={handleLogin}></Login> }
-
         </MantineProvider>
 
     </div>

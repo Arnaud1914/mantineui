@@ -2,7 +2,7 @@ import {AutocompleteComponent } from "./AutoCompleteEmail/AutocompleteComponent"
 import {PasswordInput, Stack, Button} from "@mantine/core";
 import { useDisclosure } from '@mantine/hooks';
 
-export function Login({ onLogin }: { onLogin: () => void }){
+export function  Login({ onLogin }: { onLogin: () => void }){
 
     const handleLogin = () => {
         onLogin();
@@ -24,7 +24,6 @@ export function Login({ onLogin }: { onLogin: () => void }){
                 />
                 <PasswordInput
                     label="Confirm password"
-
                     visible={visible}
                     onVisibilityChange={toggle}
                 />

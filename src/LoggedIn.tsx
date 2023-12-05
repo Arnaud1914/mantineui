@@ -7,8 +7,9 @@ export function LoggedIn(){
     const onComplete = () => {setPinComplete(true)}
 
     return(
-        <div> {pinComplete ? (<MainPage/>) : (<PinInput type={/^[0-9]*$/} inputType="tel" inputMode="numeric" onComplete={onComplete} />)}
-
+        <div>
+            <h1>Pin:</h1>
+            {pinComplete ? (<MainPage/>) : (<PinInput type={/^[0-9]*$/} inputType="tel" inputMode="numeric" onComplete={onComplete} />)}
         </div>
     )
 }
