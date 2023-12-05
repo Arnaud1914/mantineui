@@ -15,37 +15,6 @@ export function MainPage() {
 
             <h2>Your Rating</h2>
             <Rating defaultValue={2.5} fractions={4}/>
-
-
-
-            <Skeleton visible={loading}>Hello world</Skeleton>
-
-            <Button onClick={() => setLoading((l) => !l)}>
-                Click?
-            </Button>
-
-
-            <Menu>
-                <Menu.Target>
-                    <Button>Toggle menu</Button>
-                </Menu.Target>
-                <Menu.Dropdown>
-                    <Menu.Label></Menu.Label>
-                    <Menu.Item>
-                        Note 6
-                    </Menu.Item>
-                </Menu.Dropdown>
-            </Menu>
-
-
-            <Popover width={200} position="bottom" withArrow shadow="md">
-                <Popover.Target>
-                    <Button>Info</Button>
-                </Popover.Target>
-                <Popover.Dropdown>
-                    <Text size="xs">Webseite klar eine 10/10</Text>
-                </Popover.Dropdown>
-            </Popover>
         </div>
     )
 }
